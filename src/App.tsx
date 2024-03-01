@@ -4,6 +4,7 @@ import { lightTheme } from './theme'; // Import your theme
 import { ChakraProvider } from '@chakra-ui/react'
 
 //components
+import Header from './components/Header';
 import NavBar from './components/Navbar';
 import Carousal from './components/Carousal';
 import Testimonial from './components/Testimonial';
@@ -25,6 +26,7 @@ function App() {
     <ThemeProvider theme={lightTheme}>
       <ChakraProvider>
        <GlobalStyle />
+        <Header/>
         <NavBar/>
         <Carousal/>
         <Features/>
